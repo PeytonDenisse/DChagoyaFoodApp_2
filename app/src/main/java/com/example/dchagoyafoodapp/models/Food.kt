@@ -9,9 +9,9 @@ data class Food(
 
 
 val FoodList = listOf(
-    Food("Whopper", "https://example.com/whopper.png", 4.5, 99.8),
-    Food("Chicken Fries", "https://example.com/chickenfries.png", 4.3, 59.8),
-    Food("Big Mac", "https://example.com/bigmac.png", 4.6, 79.8),
-    Food("McFlurry", "https://example.com/mcflurry.png", 4.7, 49.8),
-    Food("Pepperoni Pizza", "https://example.com/pepperonipizza.png", 4.8, 129.9)
+    Food("Pizza Margarita", "https://png.pngtree.com/png-clipart/20230524/original/pngtree-pizza-italian-png-image_9169062.png", 4.5, 199.8),
+    Food("Spagetti Boloñesa", "https://png.pngtree.com/png-clipart/20240320/original/pngtree-spaghetti-italian-pasta-with-tomato-sauce-png-image_14637602.png", 4.3, 159.8),
+    Food("Lassagna", "https://static.vecteezy.com/system/resources/thumbnails/026/757/641/small/lasagna-with-ai-generated-free-png.png", 4.6, 179.8),
+    Food("Tiramisú", "https://static.vecteezy.com/system/resources/previews/046/601/086/non_2x/tiramisu-classic-italian-with-mascarpone-and-espresso-soaked-ladyfingers-served-in-a-transparent-glass-dish-png.png", 4.7, 149.8),
+    Food("Gelato", "https://www.thegelatist.it/wp-content/uploads/2018/02/coppetta.png", 4.8, 129.9)
 )

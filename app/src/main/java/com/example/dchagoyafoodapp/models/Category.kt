@@ -6,9 +6,9 @@ data class Category(
 )
 
 val CategoriyList= listOf(
-    Category("Fast Food", "https://example.com/fastfood.png"),
-    Category("Chinese", "https://example.com/chinese.png"),
-    Category("Italian", "https://example.com/italian.png"),
-    Category("Mexican", "https://example.com/mexican.png"),
-    Category("Desserts", "https://example.com/desserts.png")
+    Category("Fast Food", "https://cdn-icons-png.flaticon.com/512/2819/2819194.png"),
+    Category("Chinese", "https://cdn-icons-png.flaticon.com/512/1400/1400695.png"),
+    Category("Italian", "https://images.vexels.com/media/users/3/220450/isolated/preview/984a6e47ce1687660201e8e687ac28f2-farfalle-pasta-dish-illustration.png"),
+    Category("Mexican", "https://cdn-icons-png.freepik.com/512/6313/6313541.png"),
+    Category("Desserts", "https://cdn4.iconfinder.com/data/icons/desserts-around-the-globe/100/Dessert_Icons_Strawberry_Shortcake-512.png")
 )
