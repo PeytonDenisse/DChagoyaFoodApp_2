@@ -9,12 +9,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.example.dchagoyafoodapp.models.Category
+import com.example.dchagoyafoodapp.ui.theme.RojoOscuro
 
 @Composable
 fun CategoryCard(category: Category) {
@@ -24,13 +27,16 @@ fun CategoryCard(category: Category) {
         Box(
             modifier = Modifier
                 .size(80.dp)
-                .background(Color.Red, shape = CircleShape),
+                .background(RojoOscuro, shape = CircleShape),
             contentAlignment = Alignment.Center
         ) {
             AsyncImage(
                 model = category.imageUrl,
                 contentDescription = category.name,
-                modifier = Modifier.size(60.dp)
+                modifier = Modifier
+                    .size(60.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
             ) // fin asyncimage
         } // fin box
 
