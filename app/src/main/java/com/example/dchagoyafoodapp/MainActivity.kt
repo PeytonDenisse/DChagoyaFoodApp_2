@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.dchagoyafoodapp.components.CategoryCard
+import com.example.dchagoyafoodapp.models.Category
 import com.example.dchagoyafoodapp.ui.theme.DChagoyaFoodAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,10 +22,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             DChagoyaFoodAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    CategoryCard(
+                        category = Category(
+                            name = "Fast Food",
+                            imageUrl = "https://cdn-icons-png.flaticon.com/512/3703/3703377.png"
+                        )
                     )
+
                 }
             }
         }
